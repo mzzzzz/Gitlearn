@@ -3,4 +3,4 @@ Git is a free software distributed under the GPL.
 Git has a multable index called stage.
 Git tracks changs.
 git commit.
-
+git add.
