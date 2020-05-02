@@ -4,3 +4,4 @@ Git has a multable index called stage.
 Git tracks changs.
 git commit.
 git add.
+nothing
