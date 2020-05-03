@@ -6,3 +6,5 @@ git commit.
 git add.
 nothing
 zancunqu
+Creat a new branch is quick.
+
