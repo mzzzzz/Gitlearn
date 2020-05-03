@@ -7,4 +7,6 @@ git add.
 nothing
 zancunqu
 Creat a new branch is quick.
-
+test cat
+test cat in different branch.
+test cat after commit.
