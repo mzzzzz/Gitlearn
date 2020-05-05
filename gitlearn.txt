@@ -58,7 +58,27 @@ git clone git@github.com/mzzzzz/gitskills.git       从远程库中克隆，可�
 
 
 创建于合并分支
-git checkout -b dev     
+git checkout -b dev      创建并切换到新分支dev，相当于以下两条指令
+git branch dev        创建新分支
+git checkout dev        切换到新分支
+注意：在有未提交到分支的修改时不能进行分支切换，一旦切换分支后文件就会变成新分支的内容
+git merge dev       将dev分支合并到当前分支，Fast-forward快速合并
+git branch -d dev       删除dev分支
+git switch -c dev        创建并切换到新分支dev，与用checkout效果相同
+git switch master        切换到已有分支
+
+
+解决冲突
+git log --graph --pretty=oneline --abbrev-commit        显示合并路径
+
+
+分支管理策略
+git merge --no-ff -m "something" dev      使用普通模式合并，可以看到合并记录
+
+
+
+
+
 
 
 
