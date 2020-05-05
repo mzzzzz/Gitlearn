@@ -74,6 +74,10 @@ git log --graph --pretty=oneline --abbrev-commit        显示合并路径
 
 分支管理策略
 git merge --no-ff -m "something" dev      使用普通模式合并，可以看到合并记录
+git cherry-pick <commmit>        把其他分支修改的bug合并到当前分支
+如：git cherry-pick 202cb3e
+
+
 
 
 

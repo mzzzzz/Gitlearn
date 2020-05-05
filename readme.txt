@@ -14,3 +14,5 @@ test cat after commit.
 
 Creating a new branch is quick AND simple.
 000
+
+stash 1
