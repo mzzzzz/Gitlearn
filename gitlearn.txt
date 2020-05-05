@@ -87,6 +87,10 @@ git cherry-pick <commmit>        把其他分支修改的bug合并到当前分�
 如：git cherry-pick 202cb3e
 
 
+Feature分支
+git branch -D feature      强制删除一个没有合并过的分支
+
+
 
 
 
