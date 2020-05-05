@@ -74,8 +74,20 @@ git log --graph --pretty=oneline --abbrev-commit        显示合并路径
 
 分支管理策略
 git merge --no-ff -m "something" dev      使用普通模式合并，可以看到合并记录
+
+
+Bug分支
+git stash     把工作现场存储起来
+git stash list       显示工作现场存储列表
+git stash apply       恢复存储的工作现场
+git stash drop        删除工作现场存储
+git stash pop        恢复工作现场同时删除工作现场存储
+git stash apply stash@{0}     可以多次使用stash，然后指定stash进行恢复
 git cherry-pick <commmit>        把其他分支修改的bug合并到当前分支
 如：git cherry-pick 202cb3e
+
+
+
 
 
 
