@@ -87,6 +87,19 @@ git cherry-pick <commmit>        把其他分支修改的bug合并到当前分�
 如：git cherry-pick 202cb3e
 
 
+Feature分支
+git branch -D feature      强制删除一个没有合并过的分支
+
+
+多人协作
+git remote      查看远程库信息
+git remote -v       查看详细信息
+git push origin master    将本地分支推送到远程分支上
+git clone git@github.com:mzzzzz/Gitlearn.git       将远程库克隆到本地
+克隆过来只能看到master分支
+git checkout -b dev origin/dev     创建本地dev分支
+git pull    把最新的提交抓取下来在本地合并
+git branch --set-upstream-to=origin/dev dev      将本地分支与远程分支关联
 
 
 
