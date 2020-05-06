@@ -102,6 +102,34 @@ git pull    把最新的提交抓取下来在本地合并
 git branch --set-upstream-to=origin/dev dev      将本地分支与远程分支关联
 
 
+Rebase
+git rebase      把本地未push的分叉提交历史整理为直线
+
+
+标签
+git tag v1.0      在最新的提交打一个tag
+git tag       查看所有tag
+git tag v0.9 f522c52      根据提交commit id打tag
+git show v1.0        查看tag v1.0的标签信息
+git tag -a v1.0 -m "Version 0,1 released" 10943u45     带有标签说明
+
+
+标签操作
+git tag -d v0.1       删除一个标签
+git push origin v1.0         把一个标签推送到远程
+git push origin --tags       将所有没有推送的标签推送到远程
+删除远程标签：
+git tag -d v0.9     先删除本地标签
+git push origin :refs/tags/v0.9      从远程库中删除
+
+
+忽略特殊文件
+把需要忽略的文件名放入.gitignore文件中
+git add -f App.class     用-f指令强制添加到Git
+git check-ignore-v App.class      查看.gitignore文件中哪里阻止了文件加入Git    
+
+
+
 
 
 
